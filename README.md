@@ -1,21 +1,19 @@
-This repo is home to the Uniswap Widgets package and the web app interface [app.doughnutswap.shop](https://app.doughnutswap.shop).
+# @babel/runtime
 
-# Uniswap Labs Interface
+> babel's modular runtime helpers
 
-[![Unit Tests](https://github.com/Uniswap/interface/actions/workflows/unit-tests.yaml/badge.svg)](https://github.com/Uniswap/interface/actions/workflows/unit-tests.yaml)
-[![Integration Tests](https://github.com/Uniswap/interface/actions/workflows/integration-tests.yaml/badge.svg)](https://github.com/Uniswap/interface/actions/workflows/integration-tests.yaml)
-[![Lint](https://github.com/Uniswap/interface/actions/workflows/lint.yml/badge.svg)](https://github.com/Uniswap/interface/actions/workflows/lint.yml)
-[![Release](https://github.com/Uniswap/interface/actions/workflows/release.yaml/badge.svg)](https://github.com/Uniswap/interface/actions/workflows/release.yaml)
-[![Crowdin](https://badges.crowdin.net/uniswap-interface/localized.svg)](https://crowdin.com/project/uniswap-interface)
+See our website [@babel/runtime](https://babeljs.io/docs/en/babel-runtime) for more information.
 
-The web application hosted at https://app.doughnutswap.shop is a convenient way to access the core functionality of the Uniswap Protocol. 
+## Install
 
-For documentation of the interface including how to contribute or access prior builds, please view the README here: [INTERFACE_README.md](./INTERFACE_README.md)
+Using npm:
 
-# Uniswap Labs Widgets
+```sh
+npm install --save @babel/runtime
+```
 
-The `@uniswap/widgets` package is an npm package of React components used to provide subsets of the Uniswap Protocol functionality in a small and configurable user interface element.
+or using yarn:
 
-The npm package can be found here. [@uniswap/widgets](https://www.npmjs.com/package/@uniswap/widgets)
-
-For documentation of the widgets package, please view the README here: [WIDGETS_README.md](./WIDGETS_README.md).
+```sh
+yarn add @babel/runtime
+```
