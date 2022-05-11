@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/set-immediate");
+module.exports = require("core-js-pure/stable/set-immediate");

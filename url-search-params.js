@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/url-search-params");
+module.exports = require("core-js-pure/stable/url-search-params");

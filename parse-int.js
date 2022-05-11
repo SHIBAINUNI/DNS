@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/parse-int");
+module.exports = require("core-js-pure/stable/parse-int");

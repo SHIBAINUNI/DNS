@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/weak-map");
+module.exports = require("core-js-pure/stable/weak-map");

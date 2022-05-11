@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/weak-set");
+module.exports = require("core-js-pure/stable/weak-set");

@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/queue-microtask");
+module.exports = require("core-js-pure/stable/queue-microtask");

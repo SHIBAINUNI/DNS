@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/url");
+module.exports = require("core-js-pure/stable/url");

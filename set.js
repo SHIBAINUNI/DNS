@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/set");
+module.exports = require("core-js-pure/stable/set");

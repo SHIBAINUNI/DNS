@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/set-interval");
+module.exports = require("core-js-pure/stable/set-interval");
