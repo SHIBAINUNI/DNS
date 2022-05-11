@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/symbol/has-instance");
+module.exports = require("core-js-pure/stable/symbol/has-instance");

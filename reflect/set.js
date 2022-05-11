@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/reflect/set");
+module.exports = require("core-js-pure/stable/reflect/set");

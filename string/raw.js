@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/string/raw");
+module.exports = require("core-js-pure/stable/string/raw");

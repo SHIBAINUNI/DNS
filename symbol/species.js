@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/symbol/species");
+module.exports = require("core-js-pure/stable/symbol/species");

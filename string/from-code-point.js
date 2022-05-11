@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/string/from-code-point");
+module.exports = require("core-js-pure/stable/string/from-code-point");

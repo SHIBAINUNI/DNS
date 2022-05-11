@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/reflect/get-own-property-descriptor");
+module.exports = require("core-js-pure/stable/reflect/get-own-property-descriptor");

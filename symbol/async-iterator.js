@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/symbol/async-iterator");
+module.exports = require("core-js-pure/stable/symbol/async-iterator");

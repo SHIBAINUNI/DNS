@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/symbol/is-concat-spreadable");
+module.exports = require("core-js-pure/stable/symbol/is-concat-spreadable");

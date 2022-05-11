@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/symbol/replace");
+module.exports = require("core-js-pure/stable/symbol/replace");

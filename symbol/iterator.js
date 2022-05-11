@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/symbol/iterator");
+module.exports = require("core-js-pure/stable/symbol/iterator");

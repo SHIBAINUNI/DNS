@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/symbol/match");
+module.exports = require("core-js-pure/stable/symbol/match");

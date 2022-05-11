@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/reflect/delete-property");
+module.exports = require("core-js-pure/stable/reflect/delete-property");

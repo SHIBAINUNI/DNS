@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/symbol/unscopables");
+module.exports = require("core-js-pure/stable/symbol/unscopables");

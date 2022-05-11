@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/symbol/to-string-tag");
+module.exports = require("core-js-pure/stable/symbol/to-string-tag");

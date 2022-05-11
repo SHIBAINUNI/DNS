@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/reflect/own-keys");
+module.exports = require("core-js-pure/stable/reflect/own-keys");

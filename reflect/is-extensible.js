@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/reflect/is-extensible");
+module.exports = require("core-js-pure/stable/reflect/is-extensible");

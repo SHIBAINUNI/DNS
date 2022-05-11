@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/reflect/prevent-extensions");
+module.exports = require("core-js-pure/stable/reflect/prevent-extensions");
