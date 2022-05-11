@@ -1,10 +1,13 @@
+import _Promise from "@babel/runtime-corejs3/core-js/promise";
+import _Symbol from "@babel/runtime-corejs3/core-js/symbol";
+import _Symbol$iterator from "@babel/runtime-corejs3/core-js/symbol/iterator";
 export default function _asyncGeneratorDelegate(inner, awaitWrap) {
   var iter = {},
       waiting = false;
 
   function pump(key, value) {
     waiting = true;
-    value = new Promise(function (resolve) {
+    value = new _Promise(function (resolve) {
       resolve(inner[key](value));
     });
     return {
@@ -15,7 +18,7 @@ export default function _asyncGeneratorDelegate(inner, awaitWrap) {
 
   ;
 
-  iter[typeof Symbol !== "undefined" && Symbol.iterator || "@@iterator"] = function () {
+  iter[typeof _Symbol !== "undefined" && _Symbol$iterator || "@@iterator"] = function () {
     return this;
   };
 

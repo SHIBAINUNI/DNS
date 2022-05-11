@@ -1,5 +1,6 @@
+import _Object$assign from "@babel/runtime-corejs3/core-js/object/assign";
 export default function _extends() {
-  _extends = Object.assign || function (target) {
+  _extends = _Object$assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 

@@ -1,9 +1,11 @@
+import _Map from "@babel/runtime-corejs3/core-js/map";
+import _Object$create from "@babel/runtime-corejs3/core-js/object/create";
 import getPrototypeOf from "./getPrototypeOf.js";
 import setPrototypeOf from "./setPrototypeOf.js";
 import isNativeFunction from "./isNativeFunction.js";
 import construct from "./construct.js";
 export default function _wrapNativeSuper(Class) {
-  var _cache = typeof Map === "function" ? new Map() : undefined;
+  var _cache = typeof _Map === "function" ? new _Map() : undefined;
 
   _wrapNativeSuper = function _wrapNativeSuper(Class) {
     if (Class === null || !isNativeFunction(Class)) return Class;
@@ -22,7 +24,7 @@ export default function _wrapNativeSuper(Class) {
       return construct(Class, arguments, getPrototypeOf(this).constructor);
     }
 
-    Wrapper.prototype = Object.create(Class.prototype, {
+    Wrapper.prototype = _Object$create(Class.prototype, {
       constructor: {
         value: Wrapper,
         enumerable: false,
