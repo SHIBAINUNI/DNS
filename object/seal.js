@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/object/seal");
+module.exports = require("core-js-pure/stable/object/seal");

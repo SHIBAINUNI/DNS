@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/object/prevent-extensions");
+module.exports = require("core-js-pure/stable/object/prevent-extensions");

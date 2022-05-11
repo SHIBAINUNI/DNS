@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/math/sinh");
+module.exports = require("core-js-pure/stable/math/sinh");

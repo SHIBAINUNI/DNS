@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/math/tanh");
+module.exports = require("core-js-pure/stable/math/tanh");

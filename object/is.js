@@ -1,1 +1,1 @@
-module.exports = require("core-js-pure/features/object/is");
+module.exports = require("core-js-pure/stable/object/is");
