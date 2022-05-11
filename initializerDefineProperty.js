@@ -1,6 +1,9 @@
+var _Object$defineProperty = require("@babel/runtime-corejs3/core-js/object/define-property");
+
 function _initializerDefineProperty(target, property, descriptor, context) {
   if (!descriptor) return;
-  Object.defineProperty(target, property, {
+
+  _Object$defineProperty(target, property, {
     enumerable: descriptor.enumerable,
     configurable: descriptor.configurable,
     writable: descriptor.writable,
@@ -8,4 +11,5 @@ function _initializerDefineProperty(target, property, descriptor, context) {
   });
 }
 
-module.exports = _initializerDefineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports;
+module.exports = _initializerDefineProperty;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

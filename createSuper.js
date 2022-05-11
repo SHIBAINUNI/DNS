@@ -1,3 +1,5 @@
+var _Reflect$construct = require("@babel/runtime-corejs3/core-js/reflect/construct");
+
 var getPrototypeOf = require("./getPrototypeOf.js");
 
 var isNativeReflectConstruct = require("./isNativeReflectConstruct.js");
@@ -12,7 +14,7 @@ function _createSuper(Derived) {
 
     if (hasNativeReflectConstruct) {
       var NewTarget = getPrototypeOf(this).constructor;
-      result = Reflect.construct(Super, arguments, NewTarget);
+      result = _Reflect$construct(Super, arguments, NewTarget);
     } else {
       result = Super.apply(this, arguments);
     }
@@ -21,4 +23,5 @@ function _createSuper(Derived) {
   };
 }
 
-module.exports = _createSuper, module.exports.__esModule = true, module.exports["default"] = module.exports;
+module.exports = _createSuper;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

@@ -1,3 +1,7 @@
+var _Map = require("@babel/runtime-corejs3/core-js/map");
+
+var _Object$create = require("@babel/runtime-corejs3/core-js/object/create");
+
 var getPrototypeOf = require("./getPrototypeOf.js");
 
 var setPrototypeOf = require("./setPrototypeOf.js");
@@ -7,7 +11,7 @@ var isNativeFunction = require("./isNativeFunction.js");
 var construct = require("./construct.js");
 
 function _wrapNativeSuper(Class) {
-  var _cache = typeof Map === "function" ? new Map() : undefined;
+  var _cache = typeof _Map === "function" ? new _Map() : undefined;
 
   module.exports = _wrapNativeSuper = function _wrapNativeSuper(Class) {
     if (Class === null || !isNativeFunction(Class)) return Class;
@@ -26,7 +30,7 @@ function _wrapNativeSuper(Class) {
       return construct(Class, arguments, getPrototypeOf(this).constructor);
     }
 
-    Wrapper.prototype = Object.create(Class.prototype, {
+    Wrapper.prototype = _Object$create(Class.prototype, {
       constructor: {
         value: Wrapper,
         enumerable: false,
@@ -35,8 +39,11 @@ function _wrapNativeSuper(Class) {
       }
     });
     return setPrototypeOf(Wrapper, Class);
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  };
+
+  module.exports["default"] = module.exports, module.exports.__esModule = true;
   return _wrapNativeSuper(Class);
 }
 
-module.exports = _wrapNativeSuper, module.exports.__esModule = true, module.exports["default"] = module.exports;
+module.exports = _wrapNativeSuper;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

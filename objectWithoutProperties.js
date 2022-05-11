@@ -1,3 +1,7 @@
+var _Object$getOwnPropertySymbols = require("@babel/runtime-corejs3/core-js/object/get-own-property-symbols");
+
+var _indexOfInstanceProperty = require("@babel/runtime-corejs3/core-js/instance/index-of");
+
 var objectWithoutPropertiesLoose = require("./objectWithoutPropertiesLoose.js");
 
 function _objectWithoutProperties(source, excluded) {
@@ -5,12 +9,12 @@ function _objectWithoutProperties(source, excluded) {
   var target = objectWithoutPropertiesLoose(source, excluded);
   var key, i;
 
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+  if (_Object$getOwnPropertySymbols) {
+    var sourceSymbolKeys = _Object$getOwnPropertySymbols(source);
 
     for (i = 0; i < sourceSymbolKeys.length; i++) {
       key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
+      if (_indexOfInstanceProperty(excluded).call(excluded, key) >= 0) continue;
       if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
       target[key] = source[key];
     }
@@ -19,4 +23,5 @@ function _objectWithoutProperties(source, excluded) {
   return target;
 }
 
-module.exports = _objectWithoutProperties, module.exports.__esModule = true, module.exports["default"] = module.exports;
+module.exports = _objectWithoutProperties;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

@@ -1,10 +1,16 @@
+var _Promise = require("@babel/runtime-corejs3/core-js/promise");
+
+var _Symbol = require("@babel/runtime-corejs3/core-js/symbol");
+
+var _Symbol$asyncIterator = require("@babel/runtime-corejs3/core-js/symbol/async-iterator");
+
 var AwaitValue = require("./AwaitValue.js");
 
 function AsyncGenerator(gen) {
   var front, back;
 
   function send(key, arg) {
-    return new Promise(function (resolve, reject) {
+    return new _Promise(function (resolve, reject) {
       var request = {
         key: key,
         arg: arg,
@@ -27,7 +33,8 @@ function AsyncGenerator(gen) {
       var result = gen[key](arg);
       var value = result.value;
       var wrappedAwait = value instanceof AwaitValue;
-      Promise.resolve(wrappedAwait ? value.wrapped : value).then(function (arg) {
+
+      _Promise.resolve(wrappedAwait ? value.wrapped : value).then(function (arg) {
         if (wrappedAwait) {
           resume(key === "return" ? "return" : "next", arg);
           return;
@@ -79,7 +86,7 @@ function AsyncGenerator(gen) {
   }
 }
 
-AsyncGenerator.prototype[typeof Symbol === "function" && Symbol.asyncIterator || "@@asyncIterator"] = function () {
+AsyncGenerator.prototype[typeof _Symbol === "function" && _Symbol$asyncIterator || "@@asyncIterator"] = function () {
   return this;
 };
 
@@ -95,4 +102,5 @@ AsyncGenerator.prototype["return"] = function (arg) {
   return this._invoke("return", arg);
 };
 
-module.exports = AsyncGenerator, module.exports.__esModule = true, module.exports["default"] = module.exports;
+module.exports = AsyncGenerator;
+module.exports["default"] = module.exports, module.exports.__esModule = true;

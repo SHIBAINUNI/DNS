@@ -1,10 +1,16 @@
+var _Symbol = require("@babel/runtime-corejs3/core-js/symbol");
+
+var _getIteratorMethod = require("@babel/runtime-corejs3/core-js/get-iterator-method");
+
+var _Array$isArray = require("@babel/runtime-corejs3/core-js/array/is-array");
+
 var unsupportedIterableToArray = require("./unsupportedIterableToArray.js");
 
 function _createForOfIteratorHelper(o, allowArrayLike) {
-  var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"];
+  var it = typeof _Symbol !== "undefined" && _getIteratorMethod(o) || o["@@iterator"];
 
   if (!it) {
-    if (Array.isArray(o) || (it = unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
+    if (_Array$isArray(o) || (it = unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
       if (it) o = it;
       var i = 0;
 
@@ -57,4 +63,5 @@ function _createForOfIteratorHelper(o, allowArrayLike) {
   };
 }
 
-module.exports = _createForOfIteratorHelper, module.exports.__esModule = true, module.exports["default"] = module.exports;
+module.exports = _createForOfIteratorHelper;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
